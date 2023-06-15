@@ -8,14 +8,14 @@ import (
 )
 
 func executarTrojan() {
-	fmt.Println("Executando Trojan...")
+	fmt.Println("Executando malware...")
 
-	cmd := exec.Command("/path/to/trojan")
+	cmd := exec.Command("/path/to/script")
 	cmd.Run()
 }
 
 func ocultarTrojan() {
-	fmt.Println("Ocultando Trojan...")
+	fmt.Println("Ocultando...")
 
 	cmd := exec.Command("bash", "-c", "echo 0 > /proc/self/status")
 	cmd.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
